@@ -10,7 +10,7 @@
 + [Useful resources](https://github.com/6eer/arbitrage-bot-uniswap-sushiswap#useful-resources)
 + [Notes](https://github.com/6eer/arbitrage-bot-uniswap-sushiswap#notes)
 
-## What is included in this repo?
+## What is included in this repo
 This repository contains bot that makes arbitrage between Uniswap V2 and Sushiswap.
 The bot is written in TS that observes the prices changes on a pre user-defined liquidity pool at Uniswap V2 / Sushiswap and determine if there is a possibly to make a profit buying tokens cheaper at one exchange and selling them after for a bigger amount in the other, keeping the difference (profit).
 For trades we don't use our own assets, we use FLASH loans from DyDx exchange.
