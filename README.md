@@ -1,14 +1,14 @@
 # Crypto Arbitrage Bot. Trades on Uniswap and Sushiswap. ETH network
 
 ## Index
-+ [What is included in this repo?](https://github.com/6eer/arbitrage-bot-uniswap-sushiswap#what-is-included-in-this-repo)
-+ [Installation](https://github.com/6eer/arbitrage-bot-uniswap-sushiswap#installation)
-+ [Running the bot](https://github.com/6eer/arbitrage-bot-uniswap-sushiswap#running-the-bot)
-+ [Deploying the contracts](https://github.com/6eer/arbitrage-bot-uniswap-sushiswap#deploying-the-contracts)
-+ [Deploying NodeJS project to production](https://github.com/6eer/arbitrage-bot-uniswap-sushiswap#deploying-nodejs-project-to-production)
-+ [Considerations for production](https://github.com/6eer/arbitrage-bot-uniswap-sushiswap#considerations-for-production)
-+ [Useful resources](https://github.com/6eer/arbitrage-bot-uniswap-sushiswap#useful-resources)
-+ [Notes](https://github.com/6eer/arbitrage-bot-uniswap-sushiswap#notes)
++ [What is included in this repo](https://github.com/andrey3kirsanov/arbitrage-bot-uniswap-sushiswap#what-is-included-in-this-repo)
++ [Installation](https://github.com/andrey3kirsanov/arbitrage-bot-uniswap-sushiswap#installation)
++ [Running the bot](https://github.com/andrey3kirsanov/arbitrage-bot-uniswap-sushiswap#running-the-bot)
++ [Deploying the contracts](https://github.com/andrey3kirsanov/arbitrage-bot-uniswap-sushiswap#deploying-the-contracts)
++ [Deploying NodeJS project to production](https://github.com/andrey3kirsanov/arbitrage-bot-uniswap-sushiswap#deploying-nodejs-project-to-production)
++ [Considerations for production](https://github.com/andrey3kirsanov/arbitrage-bot-uniswap-sushiswap#considerations-for-production)
++ [Useful resources](https://github.com/andrey3kirsanov/arbitrage-bot-uniswap-sushiswap#useful-resources)
++ [Notes](https://github.com/andrey3kirsanov/arbitrage-bot-uniswap-sushiswap#notes)
 
 ## What is included in this repo
 This repository contains bot that makes arbitrage between Uniswap V2 and Sushiswap.
