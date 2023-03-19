@@ -1,0 +1,3662 @@
+version: '3.8'
+services:
+  app1:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 301:3000
+    environment:
+      - TOKEN_NAME=UNI
+      - TOKEN_CONTRACT=0x1f9840a85d5af5bf1d1762f925bdaddc4201f984
+    command: node ./bot.js
+    restart: always
+  app2:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 302:3000
+    environment:
+      - TOKEN_NAME=ELON
+      - TOKEN_CONTRACT=0x761d38e5ddf6ccf6cf7c55759d5210750b5d60f3
+    command: node ./bot.js
+    restart: always
+  app3:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 303:3000
+    environment:
+      - TOKEN_NAME=MUTE
+      - TOKEN_CONTRACT=0xa49d7499271ae71cd8ab9ac515e6694c755d400c
+    command: node ./bot.js
+    restart: always
+  app4:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 304:3000
+    environment:
+      - TOKEN_NAME=DOSE
+      - TOKEN_CONTRACT=0xb31ef9e52d94d4120eb44fe1ddfde5b4654a6515
+    command: node ./bot.js
+    restart: always
+  app5:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 305:3000
+    environment:
+      - TOKEN_NAME=HT
+      - TOKEN_CONTRACT=0x6f259637dcd74c767781e37bc6133cd6a68aa161
+    command: node ./bot.js
+    restart: always
+  app6:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 306:3000
+    environment:
+      - TOKEN_NAME=PAXG
+      - TOKEN_CONTRACT=0x45804880de22913dafe09f4980848ece6ecbaf78
+    command: node ./bot.js
+    restart: always
+  app7:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 307:3000
+    environment:
+      - TOKEN_NAME=HEX
+      - TOKEN_CONTRACT=0x2b591e99afe9f32eaa6214f7b7629768c40eeb39
+    command: node ./bot.js
+    restart: always
+  app8:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 308:3000
+    environment:
+      - TOKEN_NAME=CVP
+      - TOKEN_CONTRACT=0x38e4adb44ef08f22f5b5b76a8f0c2d0dcbe7dca1
+    command: node ./bot.js
+    restart: always
+  app9:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 309:3000
+    environment:
+      - TOKEN_NAME=AUDIO
+      - TOKEN_CONTRACT=0x18aaa7115705e8be94bffebde57af9bfc265b998
+    command: node ./bot.js
+    restart: always
+  app10:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3010:3000
+    environment:
+      - TOKEN_NAME=STARL
+      - TOKEN_CONTRACT=0x8e6cd950ad6ba651f6dd608dc70e5886b1aa6b24
+    command: node ./bot.js
+    restart: always
+  app11:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3011:3000
+    environment:
+      - TOKEN_NAME=SHIB
+      - TOKEN_CONTRACT=0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce
+    command: node ./bot.js
+    restart: always
+  app12:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3012:3000
+    environment:
+      - TOKEN_NAME=WOO
+      - TOKEN_CONTRACT=0x4691937a7508860f876c9c0a2a617e7d9e945d4b
+    command: node ./bot.js
+    restart: always
+  app13:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3013:3000
+    environment:
+      - TOKEN_NAME=OCEAN
+      - TOKEN_CONTRACT=0x967da4048cd07ab37855c090aaf366e4ce1b9f48
+    command: node ./bot.js
+    restart: always
+  app14:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3014:3000
+    environment:
+      - TOKEN_NAME=MATIC
+      - TOKEN_CONTRACT=0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0
+    command: node ./bot.js
+    restart: always
+  app15:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3015:3000
+    environment:
+      - TOKEN_NAME=SAND
+      - TOKEN_CONTRACT=0x3845badade8e6dff049820680d1f14bd3903a5d0
+    command: node ./bot.js
+    restart: always
+  app16:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3016:3000
+    environment:
+      - TOKEN_NAME=RIO
+      - TOKEN_CONTRACT=0xf21661d0d1d76d3ecb8e1b9f1c923dbfffae4097
+    command: node ./bot.js
+    restart: always
+  app17:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3017:3000
+    environment:
+      - TOKEN_NAME=SUPER
+      - TOKEN_CONTRACT=0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55
+    command: node ./bot.js
+    restart: always
+  app18:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3018:3000
+    environment:
+      - TOKEN_NAME=RBN
+      - TOKEN_CONTRACT=0x6123b0049f904d730db3c36a31167d9d4121fa6b
+    command: node ./bot.js
+    restart: always
+  app19:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3019:3000
+    environment:
+      - TOKEN_NAME=DIA
+      - TOKEN_CONTRACT=0x84ca8bc7997272c7cfb4d0cd3d55cd942b3c9419
+    command: node ./bot.js
+    restart: always
+  app20:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3020:3000
+    environment:
+      - TOKEN_NAME=BIRD
+      - TOKEN_CONTRACT=0x70401dfd142a16dc7031c56e862fc88cb9537ce0
+    command: node ./bot.js
+    restart: always
+  app21:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3021:3000
+    environment:
+      - TOKEN_NAME=LINK
+      - TOKEN_CONTRACT=0x514910771af9ca656af840dff83e8264ecf986ca
+    command: node ./bot.js
+    restart: always
+  app22:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3022:3000
+    environment:
+      - TOKEN_NAME=UFT
+      - TOKEN_CONTRACT=0x0202be363b8a4820f3f4de7faf5224ff05943ab1
+    command: node ./bot.js
+    restart: always
+  app23:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3023:3000
+    environment:
+      - TOKEN_NAME=RARI
+      - TOKEN_CONTRACT=0xfca59cd816ab1ead66534d82bc21e7515ce441cf
+    command: node ./bot.js
+    restart: always
+  app24:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3024:3000
+    environment:
+      - TOKEN_NAME=GRT
+      - TOKEN_CONTRACT=0xc944e90c64b2c07662a292be6244bdf05cda44a7
+    command: node ./bot.js
+    restart: always
+  app25:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3025:3000
+    environment:
+      - TOKEN_NAME=DOGEGF
+      - TOKEN_CONTRACT=0xfb130d93e49dca13264344966a611dc79a456bc5
+    command: node ./bot.js
+    restart: always
+  app26:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3026:3000
+    environment:
+      - TOKEN_NAME=METIS
+      - TOKEN_CONTRACT=0x9e32b13ce7f2e80a01932b42553652e053d6ed8e
+    command: node ./bot.js
+    restart: always
+  app27:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3027:3000
+    environment:
+      - TOKEN_NAME=XOR
+      - TOKEN_CONTRACT=0x40fd72257597aa14c7231a7b1aaa29fce868f677
+    command: node ./bot.js
+    restart: always
+  app28:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3028:3000
+    environment:
+      - TOKEN_NAME=GMEE
+      - TOKEN_CONTRACT=0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373
+    command: node ./bot.js
+    restart: always
+  app29:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3029:3000
+    environment:
+      - TOKEN_NAME=QNT
+      - TOKEN_CONTRACT=0x4a220e6096b25eadb88358cb44068a3248254675
+    command: node ./bot.js
+    restart: always
+  app30:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3030:3000
+    environment:
+      - TOKEN_NAME=1INCH
+      - TOKEN_CONTRACT=0x111111111117dc0aa78b770fa6a738034120c302
+    command: node ./bot.js
+    restart: always
+  app31:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3031:3000
+    environment:
+      - TOKEN_NAME=FTT
+      - TOKEN_CONTRACT=0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9
+    command: node ./bot.js
+    restart: always
+  app32:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3032:3000
+    environment:
+      - TOKEN_NAME=LEASH
+      - TOKEN_CONTRACT=0x27c70cd1946795b66be9d954418546998b546634
+    command: node ./bot.js
+    restart: always
+  app33:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3033:3000
+    environment:
+      - TOKEN_NAME=wNXM
+      - TOKEN_CONTRACT=0x0d438f3b5175bebc262bf23753c1e53d03432bde
+    command: node ./bot.js
+    restart: always
+  app34:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3034:3000
+    environment:
+      - TOKEN_NAME=LAYER
+      - TOKEN_CONTRACT=0x0ff6ffcfda92c53f615a4a75d982f399c989366b
+    command: node ./bot.js
+    restart: always
+  app35:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3035:3000
+    environment:
+      - TOKEN_NAME=CEL
+      - TOKEN_CONTRACT=0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d
+    command: node ./bot.js
+    restart: always
+  app36:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3036:3000
+    environment:
+      - TOKEN_NAME=ID
+      - TOKEN_CONTRACT=0xebd9d99a3982d547c5bb4db7e3b1f9f14b67eb83
+    command: node ./bot.js
+    restart: always
+  app37:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3037:3000
+    environment:
+      - TOKEN_NAME=ANT
+      - TOKEN_CONTRACT=0xa117000000f279d81a1d3cc75430faa017fa5a2e
+    command: node ./bot.js
+    restart: always
+  app38:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3038:3000
+    environment:
+      - TOKEN_NAME=??
+      - TOKEN_CONTRACT=0x88acdd2a6425c3faae4bc9650fd7e27e0bebb7ab
+    command: node ./bot.js
+    restart: always
+  app39:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3039:3000
+    environment:
+      - TOKEN_NAME=KISHU
+      - TOKEN_CONTRACT=0xa2b4c0af19cc16a6cfacce81f192b024d625817d
+    command: node ./bot.js
+    restart: always
+  app40:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3040:3000
+    environment:
+      - TOKEN_NAME=REQ
+      - TOKEN_CONTRACT=0x8f8221afbb33998d8584a2b05749ba73c37a938a
+    command: node ./bot.js
+    restart: always
+  app41:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3041:3000
+    environment:
+      - TOKEN_NAME=SNX
+      - TOKEN_CONTRACT=0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f
+    command: node ./bot.js
+    restart: always
+  app42:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3042:3000
+    environment:
+      - TOKEN_NAME=COTI
+      - TOKEN_CONTRACT=0xddb3422497e61e13543bea06989c0789117555c5
+    command: node ./bot.js
+    restart: always
+  app43:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3043:3000
+    environment:
+      - TOKEN_NAME=ADX
+      - TOKEN_CONTRACT=0xade00c28244d5ce17d72e40330b1c318cd12b7c3
+    command: node ./bot.js
+    restart: always
+  app44:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3044:3000
+    environment:
+      - TOKEN_NAME=CIV
+      - TOKEN_CONTRACT=0x37fe0f067fa808ffbdd12891c0858532cfe7361d
+    command: node ./bot.js
+    restart: always
+  app45:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3045:3000
+    environment:
+      - TOKEN_NAME=CAPS
+      - TOKEN_CONTRACT=0x03be5c903c727ee2c8c4e9bc0acc860cca4715e2
+    command: node ./bot.js
+    restart: always
+  app46:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3046:3000
+    environment:
+      - TOKEN_NAME=XMON
+      - TOKEN_CONTRACT=0x3aada3e213abf8529606924d8d1c55cbdc70bf74
+    command: node ./bot.js
+    restart: always
+  app47:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3047:3000
+    environment:
+      - TOKEN_NAME=DPX
+      - TOKEN_CONTRACT=0xeec2be5c91ae7f8a338e1e5f3b5de49d07afdc81
+    command: node ./bot.js
+    restart: always
+  app48:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3048:3000
+    environment:
+      - TOKEN_NAME=TRAC
+      - TOKEN_CONTRACT=0xaa7a9ca87d3694b5755f213b5d04094b8d0f0a6f
+    command: node ./bot.js
+    restart: always
+  app49:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3049:3000
+    environment:
+      - TOKEN_NAME=SUSHI
+      - TOKEN_CONTRACT=0x6b3595068778dd592e39a122f4f5a5cf09c90fe2
+    command: node ./bot.js
+    restart: always
+  app50:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3050:3000
+    environment:
+      - TOKEN_NAME=XEN
+      - TOKEN_CONTRACT=0x06450dee7fd2fb8e39061434babcfc05599a6fb8
+    command: node ./bot.js
+    restart: always
+  app51:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3051:3000
+    environment:
+      - TOKEN_NAME=AMPL
+      - TOKEN_CONTRACT=0xd46ba6d942050d489dbd938a2c909a5d5039a161
+    command: node ./bot.js
+    restart: always
+  app52:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3052:3000
+    environment:
+      - TOKEN_NAME=STATE
+      - TOKEN_CONTRACT=0x00c2999c8b2adf4abc835cc63209533973718eb1
+    command: node ./bot.js
+    restart: always
+  app53:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3053:3000
+    environment:
+      - TOKEN_NAME=TOWER
+      - TOKEN_CONTRACT=0x1c9922314ed1415c95b9fd453c3818fd41867d0b
+    command: node ./bot.js
+    restart: always
+  app54:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3054:3000
+    environment:
+      - TOKEN_NAME=REVV
+      - TOKEN_CONTRACT=0x557b933a7c2c45672b610f8954a3deb39a51a8ca
+    command: node ./bot.js
+    restart: always
+  app55:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3055:3000
+    environment:
+      - TOKEN_NAME=CRV
+      - TOKEN_CONTRACT=0xd533a949740bb3306d119cc777fa900ba034cd52
+    command: node ./bot.js
+    restart: always
+  app56:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3056:3000
+    environment:
+      - TOKEN_NAME=BLOCKS
+      - TOKEN_CONTRACT=0x8a6d4c8735371ebaf8874fbd518b56edd66024eb
+    command: node ./bot.js
+    restart: always
+  app57:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3057:3000
+    environment:
+      - TOKEN_NAME=CNTR
+      - TOKEN_CONTRACT=0x03042482d64577a7bdb282260e2ea4c8a89c064b
+    command: node ./bot.js
+    restart: always
+  app58:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3058:3000
+    environment:
+      - TOKEN_NAME=REN
+      - TOKEN_CONTRACT=0x408e41876cccdc0f92210600ef50372656052a38
+    command: node ./bot.js
+    restart: always
+  app59:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3059:3000
+    environment:
+      - TOKEN_NAME=UBT
+      - TOKEN_CONTRACT=0x8400d94a5cb0fa0d041a3788e395285d61c9ee5e
+    command: node ./bot.js
+    restart: always
+  app60:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3060:3000
+    environment:
+      - TOKEN_NAME=renFIL
+      - TOKEN_CONTRACT=0xd5147bc8e386d91cc5dbe72099dac6c9b99276f5
+    command: node ./bot.js
+    restart: always
+  app61:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3061:3000
+    environment:
+      - TOKEN_NAME=RAI
+      - TOKEN_CONTRACT=0x03ab458634910aad20ef5f1c8ee96f1d6ac54919
+    command: node ./bot.js
+    restart: always
+  app62:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3062:3000
+    environment:
+      - TOKEN_NAME=KOIN
+      - TOKEN_CONTRACT=0x66d28cb58487a7609877550e1a34691810a6b9fc
+    command: node ./bot.js
+    restart: always
+  app63:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3063:3000
+    environment:
+      - TOKEN_NAME=SPS
+      - TOKEN_CONTRACT=0x00813e3421e1367353bfe7615c7f7f133c89df74
+    command: node ./bot.js
+    restart: always
+  app64:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3064:3000
+    environment:
+      - TOKEN_NAME=DC
+      - TOKEN_CONTRACT=0x7b4328c127b85369d9f82ca0503b000d09cf9180
+    command: node ./bot.js
+    restart: always
+  app65:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3065:3000
+    environment:
+      - TOKEN_NAME=TRU
+      - TOKEN_CONTRACT=0xf65b5c5104c4fafd4b709d9d60a185eae063276c
+    command: node ./bot.js
+    restart: always
+  app66:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3066:3000
+    environment:
+      - TOKEN_NAME=DPI
+      - TOKEN_CONTRACT=0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b
+    command: node ./bot.js
+    restart: always
+  app67:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3067:3000
+    environment:
+      - TOKEN_NAME=PMON
+      - TOKEN_CONTRACT=0x1796ae0b0fa4862485106a0de9b654efe301d0b2
+    command: node ./bot.js
+    restart: always
+  app68:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3068:3000
+    environment:
+      - TOKEN_NAME=ankrETH
+      - TOKEN_CONTRACT=0xe95a203b1a91a908f9b9ce46459d101078c2c3cb
+    command: node ./bot.js
+    restart: always
+  app69:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3069:3000
+    environment:
+      - TOKEN_NAME=HOGE
+      - TOKEN_CONTRACT=0xfad45e47083e4607302aa43c65fb3106f1cd7607
+    command: node ./bot.js
+    restart: always
+  app70:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3070:3000
+    environment:
+      - TOKEN_NAME=AKITA
+      - TOKEN_CONTRACT=0x3301ee63fb29f863f2333bd4466acb46cd8323e6
+    command: node ./bot.js
+    restart: always
+  app71:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3071:3000
+    environment:
+      - TOKEN_NAME=APE
+      - TOKEN_CONTRACT=0x4d224452801aced8b2f0aebe155379bb5d594381
+    command: node ./bot.js
+    restart: always
+  app72:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3072:3000
+    environment:
+      - TOKEN_NAME=REEF
+      - TOKEN_CONTRACT=0xfe3e6a25e6b192a42a44ecddcd13796471735acf
+    command: node ./bot.js
+    restart: always
+  app73:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3073:3000
+    environment:
+      - TOKEN_NAME=FUSE
+      - TOKEN_CONTRACT=0x970b9bb2c0444f5e81e9d0efb84c8ccdcdcaf84d
+    command: node ./bot.js
+    restart: always
+  app74:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3074:3000
+    environment:
+      - TOKEN_NAME=WHITE
+      - TOKEN_CONTRACT=0x5f0e628b693018f639d10e4a4f59bd4d8b2b6b44
+    command: node ./bot.js
+    restart: always
+  app75:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3075:3000
+    environment:
+      - TOKEN_NAME=LRC
+      - TOKEN_CONTRACT=0xbbbbca6a901c926f240b89eacb641d8aec7aeafd
+    command: node ./bot.js
+    restart: always
+#  app76:
+#    build: .
+#    volumes:
+#      - .:/usr/app/
+#      - /usr/app/node_modules
+#    ports:
+#      - 3076:3000
+#    environment:
+#      - TOKEN_NAME=DF
+#      - TOKEN_CONTRACT=0x431ad2ff6a9c365805ebad47ee021148d6f7dbe0
+#    command: node ./bot.js
+#    restart: always
+  app77:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3077:3000
+    environment:
+      - TOKEN_NAME=DEV
+      - TOKEN_CONTRACT=0x5caf454ba92e6f2c929df14667ee360ed9fd5b26
+    command: node ./bot.js
+    restart: always
+  app78:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3078:3000
+    environment:
+      - TOKEN_NAME=XYO
+      - TOKEN_CONTRACT=0x55296f69f40ea6d20e478533c15a6b08b654e758
+    command: node ./bot.js
+    restart: always
+  app79:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3079:3000
+    environment:
+      - TOKEN_NAME=MAGIC
+      - TOKEN_CONTRACT=0xb0c7a3ba49c7a6eaba6cd4a96c55a1391070ac9a
+    command: node ./bot.js
+    restart: always
+  app80:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3080:3000
+    environment:
+      - TOKEN_NAME=UMB
+      - TOKEN_CONTRACT=0x6fc13eace26590b80cccab1ba5d51890577d83b2
+    command: node ./bot.js
+    restart: always
+  app81:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3081:3000
+    environment:
+      - TOKEN_NAME=QSP
+      - TOKEN_CONTRACT=0x99ea4db9ee77acd40b119bd1dc4e33e1c070b80d
+    command: node ./bot.js
+    restart: always
+  app82:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3082:3000
+    environment:
+      - TOKEN_NAME=UMAD
+      - TOKEN_CONTRACT=0x31c2415c946928e9fd1af83cdfa38d3edbd4326f
+    command: node ./bot.js
+    restart: always
+  app83:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3083:3000
+    environment:
+      - TOKEN_NAME=ENJ
+      - TOKEN_CONTRACT=0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c
+    command: node ./bot.js
+    restart: always
+  app84:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3084:3000
+    environment:
+      - TOKEN_NAME=MANA
+      - TOKEN_CONTRACT=0x0f5d2fb29fb7d3cfee444a200298f468908cc942
+    command: node ./bot.js
+    restart: always
+  app85:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3085:3000
+    environment:
+      - TOKEN_NAME=ROOK
+      - TOKEN_CONTRACT=0xfa5047c9c78b8877af97bdcb85db743fd7313d4a
+    command: node ./bot.js
+    restart: always
+  app86:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3086:3000
+    environment:
+      - TOKEN_NAME=PNK
+      - TOKEN_CONTRACT=0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d
+    command: node ./bot.js
+    restart: always
+  app87:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3087:3000
+    environment:
+      - TOKEN_NAME=OXY
+      - TOKEN_CONTRACT=0x965697b4ef02f0de01384d0d4f9f782b1670c163
+    command: node ./bot.js
+    restart: always
+  app88:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3088:3000
+    environment:
+      - TOKEN_NAME=TORN
+      - TOKEN_CONTRACT=0x77777feddddffc19ff86db637967013e6c6a116c
+    command: node ./bot.js
+    restart: always
+  app89:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3089:3000
+    environment:
+      - TOKEN_NAME=GLM
+      - TOKEN_CONTRACT=0x7dd9c5cba05e151c895fde1cf355c9a1d5da6429
+    command: node ./bot.js
+    restart: always
+  app90:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3090:3000
+    environment:
+      - TOKEN_NAME=LON
+      - TOKEN_CONTRACT=0x0000000000095413afc295d19edeb1ad7b71c952
+    command: node ./bot.js
+    restart: always
+  app91:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3091:3000
+    environment:
+      - TOKEN_NAME=AMP
+      - TOKEN_CONTRACT=0xff20817765cb7f73d4bde2e66e067e58d11095c2
+    command: node ./bot.js
+    restart: always
+  app92:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3092:3000
+    environment:
+      - TOKEN_NAME=SYLO
+      - TOKEN_CONTRACT=0xf293d23bf2cdc05411ca0eddd588eb1977e8dcd4
+    command: node ./bot.js
+    restart: always
+  app93:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3093:3000
+    environment:
+      - TOKEN_NAME=GOVI
+      - TOKEN_CONTRACT=0xeeaa40b28a2d1b0b08f6f97bb1dd4b75316c6107
+    command: node ./bot.js
+    restart: always
+  app94:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3094:3000
+    environment:
+      - TOKEN_NAME=CWS
+      - TOKEN_CONTRACT=0xac0104cca91d167873b8601d2e71eb3d4d8c33e0
+    command: node ./bot.js
+    restart: always
+  app95:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3095:3000
+    environment:
+      - TOKEN_NAME=KEYS
+      - TOKEN_CONTRACT=0xe0a189c975e4928222978a74517442239a0b86ff
+    command: node ./bot.js
+    restart: always
+  app96:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3096:3000
+    environment:
+      - TOKEN_NAME=GET
+      - TOKEN_CONTRACT=0x8a854288a5976036a725879164ca3e91d30c6a1b
+    command: node ./bot.js
+    restart: always
+  app97:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3097:3000
+    environment:
+      - TOKEN_NAME=BONDLY
+      - TOKEN_CONTRACT=0x91dfbee3965baaee32784c2d546b7a0c62f268c9
+    command: node ./bot.js
+    restart: always
+  app98:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3098:3000
+    environment:
+      - TOKEN_NAME=MVI
+      - TOKEN_CONTRACT=0x72e364f2abdc788b7e918bc238b21f109cd634d7
+    command: node ./bot.js
+    restart: always
+  app99:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3099:3000
+    environment:
+      - TOKEN_NAME=PICKLE
+      - TOKEN_CONTRACT=0x429881672b9ae42b8eba0e26cd9c73711b891ca5
+    command: node ./bot.js
+    restart: always
+  app100:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30100:3000
+    environment:
+      - TOKEN_NAME=MAPS
+      - TOKEN_CONTRACT=0x2b915b505c017abb1547aa5ab355fbe69865cc6d
+    command: node ./bot.js
+    restart: always
+  app101:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30101:3000
+    environment:
+      - TOKEN_NAME=TOKE
+      - TOKEN_CONTRACT=0x2e9d63788249371f1dfc918a52f8d799f4a38c94
+    command: node ./bot.js
+    restart: always
+  app102:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30102:3000
+    environment:
+      - TOKEN_NAME=BAND
+      - TOKEN_CONTRACT=0xba11d00c5f74255f56a5e366f4f77f5a186d7f55
+    command: node ./bot.js
+    restart: always
+  app103:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30103:3000
+    environment:
+      - TOKEN_NAME=RFUEL
+      - TOKEN_CONTRACT=0xaf9f549774ecedbd0966c52f250acc548d3f36e5
+    command: node ./bot.js
+    restart: always
+  app104:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30104:3000
+    environment:
+      - TOKEN_NAME=BAT
+      - TOKEN_CONTRACT=0x0d8775f648430679a709e98d2b0cb6250d2887ef
+    command: node ./bot.js
+    restart: always
+  app105:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30105:3000
+    environment:
+      - TOKEN_NAME=CARDS
+      - TOKEN_CONTRACT=0x3d6f0dea3ac3c607b3998e6ce14b6350721752d9
+    command: node ./bot.js
+    restart: always
+  app106:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30106:3000
+    environment:
+      - TOKEN_NAME=COR
+      - TOKEN_CONTRACT=0x9c2dc0c3cc2badde84b0025cf4df1c5af288d835
+    command: node ./bot.js
+    restart: always
+  app107:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30107:3000
+    environment:
+      - TOKEN_NAME=AAVE
+      - TOKEN_CONTRACT=0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9
+    command: node ./bot.js
+    restart: always
+  app108:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30108:3000
+    environment:
+      - TOKEN_NAME=SMARTCREDIT
+      - TOKEN_CONTRACT=0x72e9d9038ce484ee986fea183f8d8df93f9ada13
+    command: node ./bot.js
+    restart: always
+  app109:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30109:3000
+    environment:
+      - TOKEN_NAME=SFI
+      - TOKEN_CONTRACT=0xb753428af26e81097e7fd17f40c88aaa3e04902c
+    command: node ./bot.js
+    restart: always
+  app110:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30110:3000
+    environment:
+      - TOKEN_NAME=eMax
+      - TOKEN_CONTRACT=0x15874d65e649880c2614e7a480cb7c9a55787ff6
+    command: node ./bot.js
+    restart: always
+  app111:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30111:3000
+    environment:
+      - TOKEN_NAME=BTT
+      - TOKEN_CONTRACT=0xc669928185dbce49d2230cc9b0979be6dc797957
+    command: node ./bot.js
+    restart: always
+  app112:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30112:3000
+    environment:
+      - TOKEN_NAME=WSCRT
+      - TOKEN_CONTRACT=0x2b89bf8ba858cd2fcee1fada378d5cd6936968be
+    command: node ./bot.js
+    restart: always
+  app113:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30113:3000
+    environment:
+      - TOKEN_NAME=BLT
+      - TOKEN_CONTRACT=0x107c4504cd79c5d2696ea0030a8dd4e92601b82e
+    command: node ./bot.js
+    restart: always
+  app114:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30114:3000
+    environment:
+      - TOKEN_NAME=HEGIC
+      - TOKEN_CONTRACT=0x584bc13c7d411c00c01a62e8019472de68768430
+    command: node ./bot.js
+    restart: always
+  app115:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30115:3000
+    environment:
+      - TOKEN_NAME=API3
+      - TOKEN_CONTRACT=0x0b38210ea11411557c13457d4da7dc6ea731b88a
+    command: node ./bot.js
+    restart: always
+  app116:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30116:3000
+    environment:
+      - TOKEN_NAME=PTF
+      - TOKEN_CONTRACT=0xc57d533c50bc22247d49a368880fb49a1caa39f7
+    command: node ./bot.js
+    restart: always
+  app117:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30117:3000
+    environment:
+      - TOKEN_NAME=YFI
+      - TOKEN_CONTRACT=0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e
+    command: node ./bot.js
+    restart: always
+  app118:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30118:3000
+    environment:
+      - TOKEN_NAME=FARM
+      - TOKEN_CONTRACT=0xa0246c9032bc3a600820415ae600c6388619a14d
+    command: node ./bot.js
+    restart: always
+  app119:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30119:3000
+    environment:
+      - TOKEN_NAME=RAIL
+      - TOKEN_CONTRACT=0xe76c6c83af64e4c60245d8c7de953df673a7a33d
+    command: node ./bot.js
+    restart: always
+  app120:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30120:3000
+    environment:
+      - TOKEN_NAME=COMP
+      - TOKEN_CONTRACT=0xc00e94cb662c3520282e6f5717214004a7f26888
+    command: node ./bot.js
+    restart: always
+  app121:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30121:3000
+    environment:
+      - TOKEN_NAME=BFC
+      - TOKEN_CONTRACT=0x0c7d5ae016f806603cb1782bea29ac69471cab9c
+    command: node ./bot.js
+    restart: always
+  app122:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30122:3000
+    environment:
+      - TOKEN_NAME=ETH2x-FLI
+      - TOKEN_CONTRACT=0xaa6e8127831c9de45ae56bb1b0d4d4da6e5665bd
+    command: node ./bot.js
+    restart: always
+  app123:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30123:3000
+    environment:
+      - TOKEN_NAME=RFOX
+      - TOKEN_CONTRACT=0xa1d6df714f91debf4e0802a542e13067f31b8262
+    command: node ./bot.js
+    restart: always
+  app124:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30124:3000
+    environment:
+      - TOKEN_NAME=DAO
+      - TOKEN_CONTRACT=0x0f51bb10119727a7e5ea3538074fb341f56b09ad
+    command: node ./bot.js
+    restart: always
+  app125:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30125:3000
+    environment:
+      - TOKEN_NAME=UMA
+      - TOKEN_CONTRACT=0x04fa0d235c4abf4bcf4787af4cf447de572ef828
+    command: node ./bot.js
+    restart: always
+  app126:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30126:3000
+    environment:
+      - TOKEN_NAME=CORE
+      - TOKEN_CONTRACT=0x62359ed7505efc61ff1d56fef82158ccaffa23d7
+    command: node ./bot.js
+    restart: always
+  app127:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30127:3000
+    environment:
+      - TOKEN_NAME=sUSD
+      - TOKEN_CONTRACT=0x57ab1ec28d129707052df4df418d58a2d46d5f51
+    command: node ./bot.js
+    restart: always
+  app128:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30128:3000
+    environment:
+      - TOKEN_NAME=FVT
+      - TOKEN_CONTRACT=0x45080a6531d671ddff20db42f93792a489685e32
+    command: node ./bot.js
+    restart: always
+  app129:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30129:3000
+    environment:
+      - TOKEN_NAME=GEO
+      - TOKEN_CONTRACT=0x147faf8de9d8d8daae129b187f0d02d819126750
+    command: node ./bot.js
+    restart: always
+  app130:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30130:3000
+    environment:
+      - TOKEN_NAME=FTM
+      - TOKEN_CONTRACT=0x4e15361fd6b4bb609fa63c81a2be19d873717870
+    command: node ./bot.js
+    restart: always
+  app131:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30131:3000
+    environment:
+      - TOKEN_NAME=ANY
+      - TOKEN_CONTRACT=0xf99d58e463a2e07e5692127302c20a191861b4d6
+    command: node ./bot.js
+    restart: always
+  app132:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30132:3000
+    environment:
+      - TOKEN_NAME=ZINU
+      - TOKEN_CONTRACT=0xc50ef449171a51fbeafd7c562b064b6471c36caa
+    command: node ./bot.js
+    restart: always
+  app133:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30133:3000
+    environment:
+      - TOKEN_NAME=wSIENNA
+      - TOKEN_CONTRACT=0x9b00e6e8d787b13756eb919786c9745054db64f9
+    command: node ./bot.js
+    restart: always
+  app134:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30134:3000
+    environment:
+      - TOKEN_NAME=OCC
+      - TOKEN_CONTRACT=0x2f109021afe75b949429fe30523ee7c0d5b27207
+    command: node ./bot.js
+    restart: always
+  app135:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30135:3000
+    environment:
+      - TOKEN_NAME=PRIMATE
+      - TOKEN_CONTRACT=0x46e98ffe40e408ba6412beb670507e083c8b95ff
+    command: node ./bot.js
+    restart: always
+  app136:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30136:3000
+    environment:
+      - TOKEN_NAME=SHR
+      - TOKEN_CONTRACT=0xd98f75b1a3261dab9eed4956c93f33749027a964
+    command: node ./bot.js
+    restart: always
+  app137:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30137:3000
+    environment:
+      - TOKEN_NAME=SDT
+      - TOKEN_CONTRACT=0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f
+    command: node ./bot.js
+    restart: always
+  app138:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30138:3000
+    environment:
+      - TOKEN_NAME=VSP
+      - TOKEN_CONTRACT=0x1b40183efb4dd766f11bda7a7c3ad8982e998421
+    command: node ./bot.js
+    restart: always
+  app139:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30139:3000
+    environment:
+      - TOKEN_NAME=WOLVERINU
+      - TOKEN_CONTRACT=0xca7b3ba66556c4da2e2a9afef9c64f909a59430a
+    command: node ./bot.js
+    restart: always
+  app140:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30140:3000
+    environment:
+      - TOKEN_NAME=HXRO
+      - TOKEN_CONTRACT=0x4bd70556ae3f8a6ec6c4080a0c327b24325438f3
+    command: node ./bot.js
+    restart: always
+  app141:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30141:3000
+    environment:
+      - TOKEN_NAME=ZCN
+      - TOKEN_CONTRACT=0xb9ef770b6a5e12e45983c5d80545258aa38f3b78
+    command: node ./bot.js
+    restart: always
+  app142:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30142:3000
+    environment:
+      - TOKEN_NAME=HEZ
+      - TOKEN_CONTRACT=0xeef9f339514298c6a857efcfc1a762af84438dee
+    command: node ./bot.js
+    restart: always
+  app143:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30143:3000
+    environment:
+      - TOKEN_NAME=STAK
+      - TOKEN_CONTRACT=0x1f8a626883d7724dbd59ef51cbd4bf1cf2016d13
+    command: node ./bot.js
+    restart: always
+  app144:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30144:3000
+    environment:
+      - TOKEN_NAME=HOT
+      - TOKEN_CONTRACT=0x6c6ee5e31d828de241282b9606c8e98ea48526e2
+    command: node ./bot.js
+    restart: always
+  app145:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30145:3000
+    environment:
+      - TOKEN_NAME=SATA
+      - TOKEN_CONTRACT=0x3ebb4a4e91ad83be51f8d596533818b246f4bee1
+    command: node ./bot.js
+    restart: always
+  app146:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30146:3000
+    environment:
+      - TOKEN_NAME=NODE
+      - TOKEN_CONTRACT=0xda007777d86ac6d989cc9f79a73261b3fc5e0da0
+    command: node ./bot.js
+    restart: always
+  app147:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30147:3000
+    environment:
+      - TOKEN_NAME=SKL
+      - TOKEN_CONTRACT=0x00c83aecc790e8a4453e5dd3b0b4b3680501a7a7
+    command: node ./bot.js
+    restart: always
+  app148:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30148:3000
+    environment:
+      - TOKEN_NAME=RUNE
+      - TOKEN_CONTRACT=0x3155ba85d5f96b2d030a4966af206230e46849cb
+    command: node ./bot.js
+    restart: always
+  app149:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30149:3000
+    environment:
+      - TOKEN_NAME=HULK
+      - TOKEN_CONTRACT=0x91a5de30e57831529a3c1af636a78a7e4e83f3aa
+    command: node ./bot.js
+    restart: always
+  app150:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30150:3000
+    environment:
+      - TOKEN_NAME=ENS
+      - TOKEN_CONTRACT=0xc18360217d8f7ab5e7c516566761ea12ce7f9d72
+    command: node ./bot.js
+    restart: always
+  app151:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30151:3000
+    environment:
+      - TOKEN_NAME=FORTH
+      - TOKEN_CONTRACT=0x77fba179c79de5b7653f68b5039af940ada60ce0
+    command: node ./bot.js
+    restart: always
+  app152:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30152:3000
+    environment:
+      - TOKEN_NAME=RBIS
+      - TOKEN_CONTRACT=0xf34b1db61aca1a371fe97bad2606c9f534fb9d7d
+    command: node ./bot.js
+    restart: always
+  app153:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30153:3000
+    environment:
+      - TOKEN_NAME=dogep
+      - TOKEN_CONTRACT=0xe7eaec9bca79d537539c00c58ae93117fb7280b9
+    command: node ./bot.js
+    restart: always
+  app154:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30154:3000
+    environment:
+      - TOKEN_NAME=rDPX
+      - TOKEN_CONTRACT=0x0ff5a8451a839f5f0bb3562689d9a44089738d11
+    command: node ./bot.js
+    restart: always
+  app155:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30155:3000
+    environment:
+      - TOKEN_NAME=renZEC
+      - TOKEN_CONTRACT=0x1c5db575e2ff833e46a2e9864c22f4b22e0b37c2
+    command: node ./bot.js
+    restart: always
+  app156:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30156:3000
+    environment:
+      - TOKEN_NAME=BANK
+      - TOKEN_CONTRACT=0x2d94aa3e47d9d5024503ca8491fce9a2fb4da198
+    command: node ./bot.js
+    restart: always
+  app157:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30157:3000
+    environment:
+      - TOKEN_NAME=RENASCENT
+      - TOKEN_CONTRACT=0x56de8bc61346321d4f2211e3ac3c0a7f00db9b76
+    command: node ./bot.js
+    restart: always
+  app158:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30158:3000
+    environment:
+      - TOKEN_NAME=PLR
+      - TOKEN_CONTRACT=0xe3818504c1b32bf1557b16c238b2e01fd3149c17
+    command: node ./bot.js
+    restart: always
+  app159:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30159:3000
+    environment:
+      - TOKEN_NAME=GDAO
+      - TOKEN_CONTRACT=0x515d7e9d75e2b76db60f8a051cd890eba23286bc
+    command: node ./bot.js
+    restart: always
+  app160:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30160:3000
+    environment:
+      - TOKEN_NAME=IMX
+      - TOKEN_CONTRACT=0xf57e7e7c23978c3caec3c3548e3d615c346e79ff
+    command: node ./bot.js
+    restart: always
+  app161:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30161:3000
+    environment:
+      - TOKEN_NAME=YOP
+      - TOKEN_CONTRACT=0xae1eaae3f627aaca434127644371b67b18444051
+    command: node ./bot.js
+    restart: always
+  app162:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30162:3000
+    environment:
+      - TOKEN_NAME=BPRO
+      - TOKEN_CONTRACT=0xbbbbbbb5aa847a2003fbc6b5c16df0bd1e725f61
+    command: node ./bot.js
+    restart: always
+  app163:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30163:3000
+    environment:
+      - TOKEN_NAME=KIRO
+      - TOKEN_CONTRACT=0xb1191f691a355b43542bea9b8847bc73e7abb137
+    command: node ./bot.js
+    restart: always
+  app164:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30164:3000
+    environment:
+      - TOKEN_NAME=MTA
+      - TOKEN_CONTRACT=0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2
+    command: node ./bot.js
+    restart: always
+  app165:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30165:3000
+    environment:
+      - TOKEN_NAME=POWR
+      - TOKEN_CONTRACT=0x595832f8fc6bf59c85c527fec3740a1b7a361269
+    command: node ./bot.js
+    restart: always
+  app166:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30166:3000
+    environment:
+      - TOKEN_NAME=BMI
+      - TOKEN_CONTRACT=0x725c263e32c72ddc3a19bea12c5a0479a81ee688
+    command: node ./bot.js
+    restart: always
+  app167:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30167:3000
+    environment:
+      - TOKEN_NAME=DOLA
+      - TOKEN_CONTRACT=0x865377367054516e17014ccded1e7d814edc9ce4
+    command: node ./bot.js
+    restart: always
+  app168:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30168:3000
+    environment:
+      - TOKEN_NAME=BAO
+      - TOKEN_CONTRACT=0x374cb8c27130e2c9e04f44303f3c8351b9de61c1
+    command: node ./bot.js
+    restart: always
+  app169:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30169:3000
+    environment:
+      - TOKEN_NAME=SRM
+      - TOKEN_CONTRACT=0x476c5e26a75bd202a9683ffd34359c0cc15be0ff
+    command: node ./bot.js
+    restart: always
+  app170:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30170:3000
+    environment:
+      - TOKEN_NAME=TRU
+      - TOKEN_CONTRACT=0x4c19596f5aaff459fa38b0f7ed92f11ae6543784
+    command: node ./bot.js
+    restart: always
+  app171:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30171:3000
+    environment:
+      - TOKEN_NAME=WCHI
+      - TOKEN_CONTRACT=0x6dc02164d75651758ac74435806093e421b64605
+    command: node ./bot.js
+    restart: always
+  app172:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30172:3000
+    environment:
+      - TOKEN_NAME=BNSD
+      - TOKEN_CONTRACT=0x668dbf100635f593a3847c0bdaf21f0a09380188
+    command: node ./bot.js
+    restart: always
+  app173:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30173:3000
+    environment:
+      - TOKEN_NAME=DEGEN
+      - TOKEN_CONTRACT=0x126c121f99e1e211df2e5f8de2d96fa36647c855
+    command: node ./bot.js
+    restart: always
+  app174:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30174:3000
+    environment:
+      - TOKEN_NAME=KEX
+      - TOKEN_CONTRACT=0x16980b3b4a3f9d89e33311b5aa8f80303e5ca4f8
+    command: node ./bot.js
+    restart: always
+  app175:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30175:3000
+    environment:
+      - TOKEN_NAME=BADGER
+      - TOKEN_CONTRACT=0x3472a5a71965499acd81997a54bba8d852c6e53d
+    command: node ./bot.js
+    restart: always
+  app176:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30176:3000
+    environment:
+      - TOKEN_NAME=BEL
+      - TOKEN_CONTRACT=0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14
+    command: node ./bot.js
+    restart: always
+  app177:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30177:3000
+    environment:
+      - TOKEN_NAME=BASE
+      - TOKEN_CONTRACT=0x07150e919b4de5fd6a63de1f9384828396f25fdc
+    command: node ./bot.js
+    restart: always
+  app178:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30178:3000
+    environment:
+      - TOKEN_NAME=SYNC
+      - TOKEN_CONTRACT=0xb6ff96b8a8d214544ca0dbc9b33f7ad6503efd32
+    command: node ./bot.js
+    restart: always
+  app179:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30179:3000
+    environment:
+      - TOKEN_NAME=AKRO
+      - TOKEN_CONTRACT=0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7
+    command: node ./bot.js
+    restart: always
+  app180:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30180:3000
+    environment:
+      - TOKEN_NAME=APY
+      - TOKEN_CONTRACT=0x95a4492f028aa1fd432ea71146b433e7b4446611
+    command: node ./bot.js
+    restart: always
+  app181:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30181:3000
+    environment:
+      - TOKEN_NAME=LPT
+      - TOKEN_CONTRACT=0x58b6a8a3302369daec383334672404ee733ab239
+    command: node ./bot.js
+    restart: always
+  app182:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30182:3000
+    environment:
+      - TOKEN_NAME=SHIB
+      - TOKEN_CONTRACT=0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE
+    command: node ./bot.js
+    restart: always
+  app183:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30183:3000
+    environment:
+      - TOKEN_NAME=OMG
+      - TOKEN_CONTRACT=0xd26114cd6EE289AccF82350c8d8487fedB8A0C07
+    command: node ./bot.js
+    restart: always
+  app184:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30184:3000
+    environment:
+      - TOKEN_NAME=CRO
+      - TOKEN_CONTRACT=0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b
+    command: node ./bot.js
+    restart: always
+  app185:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30185:3000
+    environment:
+      - TOKEN_NAME=ZRX
+      - TOKEN_CONTRACT=0xe41d2489571d322189246dafa5ebde1f4699f498
+    command: node ./bot.js
+    restart: always
+  app186:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30186:3000
+    environment:
+      - TOKEN_NAME=SAND
+      - TOKEN_CONTRACT=0x3845badAde8e6dFF049820680d1F14bD3903a5d0
+    command: node ./bot.js
+    restart: always
+  app187:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30187:3000
+    environment:
+      - TOKEN_NAME=GALA
+      - TOKEN_CONTRACT=0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA
+    command: node ./bot.js
+    restart: always
+  app188:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30188:3000
+    environment:
+      - TOKEN_NAME=LEND
+      - TOKEN_CONTRACT=0x80fB784B7eD66730e8b1DBd9820aFD29931aab03
+    command: node ./bot.js
+    restart: always
+  app189:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30189:3000
+    environment:
+      - TOKEN_NAME=MITx
+      - TOKEN_CONTRACT=0x4a527d8fc13c5203ab24ba0944f4cb14658d1db6
+    command: node ./bot.js
+    restart: always
+  app190:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30190:3000
+    environment:
+      - TOKEN_NAME=LYM
+      - TOKEN_CONTRACT=0xc690f7c7fcffa6a82b79fab7508c466fefdfc8c5
+    command: node ./bot.js
+    restart: always
+  app191:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30191:3000
+    environment:
+      - TOKEN_NAME=Dentacoin
+      - TOKEN_CONTRACT=0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6
+    command: node ./bot.js
+    restart: always
+  app192:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30192:3000
+    environment:
+      - TOKEN_NAME=SLP
+      - TOKEN_CONTRACT=0xcc8fa225d80b9c7d42f96e9570156c65d6caaa25
+    command: node ./bot.js
+    restart: always
+  app193:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30193:3000
+    environment:
+      - TOKEN_NAME=TUSD
+      - TOKEN_CONTRACT=0x0000000000085d4780B73119b644AE5ecd22b376
+    command: node ./bot.js
+    restart: always
+  app194:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30194:3000
+    environment:
+      - TOKEN_NAME=FREE
+      - TOKEN_CONTRACT=0x2f141ce366a2462f02cea3d12cf93e4dca49e4fd
+    command: node ./bot.js
+    restart: always
+  app195:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30195:3000
+    environment:
+      - TOKEN_NAME=GAS
+      - TOKEN_CONTRACT=0x6bba316c48b49bd1eac44573c5c871ff02958469
+    command: node ./bot.js
+    restart: always
+  app196:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30196:3000
+    environment:
+      - TOKEN_NAME=BAL
+      - TOKEN_CONTRACT=0xba100000625a3754423978a60c9317c58a424e3d
+    command: node ./bot.js
+    restart: always
+  app197:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30197:3000
+    environment:
+      - TOKEN_NAME=OGN
+      - TOKEN_CONTRACT=0x8207c1ffc5b6804f6024322ccf34f29c3541ae26
+    command: node ./bot.js
+    restart: always
+  app198:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30198:3000
+    environment:
+      - TOKEN_NAME=TEL
+      - TOKEN_CONTRACT=0x467Bccd9d29f223BcE8043b84E8C8B282827790F
+    command: node ./bot.js
+    restart: always
+  app199:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30199:3000
+    environment:
+      - TOKEN_NAME=OXT
+      - TOKEN_CONTRACT=0x4575f41308EC1483f3d399aa9a2826d74Da13Deb
+    command: node ./bot.js
+    restart: always
+  app200:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30200:3000
+    environment:
+      - TOKEN_NAME=DRGN
+      - TOKEN_CONTRACT=0x419c4db4b9e25d6db2ad9691ccb832c8d9fda05e
+    command: node ./bot.js
+    restart: always
+  app201:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30201:3000
+    environment:
+      - TOKEN_NAME=OCEAN
+      - TOKEN_CONTRACT=0x967da4048cD07aB37855c090aAF366e4ce1b9F48
+    command: node ./bot.js
+    restart: always
+  app202:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30202:3000
+    environment:
+      - TOKEN_NAME=NMR
+      - TOKEN_CONTRACT=0x1776e1f26f98b1a5df9cd347953a26dd3cb46671
+    command: node ./bot.js
+    restart: always
+  app203:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30203:3000
+    environment:
+      - TOKEN_NAME=ZEON
+      - TOKEN_CONTRACT=0xe5b826ca2ca02f09c1725e9bd98d9a8874c30532
+    command: node ./bot.js
+    restart: always
+  app204:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30204:3000
+    environment:
+      - TOKEN_NAME=XEN
+      - TOKEN_CONTRACT=0x06450dEe7FD2Fb8E39061434BAbCFC05599a6Fb8
+    command: node ./bot.js
+    restart: always
+  app205:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30205:3000
+    environment:
+      - TOKEN_NAME=FET
+      - TOKEN_CONTRACT=0xaea46A60368A7bD060eec7DF8CBa43b7EF41Ad85
+    command: node ./bot.js
+    restart: always
+  app206:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30206:3000
+    environment:
+      - TOKEN_NAME=DYDX
+      - TOKEN_CONTRACT=0x92d6c1e31e14520e676a687f0a93788b716beff5
+    command: node ./bot.js
+    restart: always
+  app207:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30207:3000
+    environment:
+      - TOKEN_NAME=SPELL
+      - TOKEN_CONTRACT=0x090185f2135308bad17527004364ebcc2d37e5f6
+    command: node ./bot.js
+    restart: always
+  app208:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30208:3000
+    environment:
+      - TOKEN_NAME=ZCN
+      - TOKEN_CONTRACT=0xb9EF770B6A5e12E45983C5D80545258aA38F3B78
+    command: node ./bot.js
+    restart: always
+  app209:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30209:3000
+    environment:
+      - TOKEN_NAME=RCN
+      - TOKEN_CONTRACT=0xf970b8e36e23f7fc3fd752eea86f8be8d83375a6
+    command: node ./bot.js
+    restart: always
+  app210:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30210:3000
+    environment:
+      - TOKEN_NAME=ILV
+      - TOKEN_CONTRACT=0x767fe9edc9e0df98e07454847909b5e959d7ca0e
+    command: node ./bot.js
+    restart: always
+  app211:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30211:3000
+    environment:
+      - TOKEN_NAME=LDO
+      - TOKEN_CONTRACT=0x5a98fcbea516cf06857215779fd812ca3bef1b32
+    command: node ./bot.js
+    restart: always
+  app212:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30212:3000
+    environment:
+      - TOKEN_NAME=DIA
+      - TOKEN_CONTRACT=0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419
+    command: node ./bot.js
+    restart: always
+  app213:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30213:3000
+    environment:
+      - TOKEN_NAME=RLC
+      - TOKEN_CONTRACT=0x607F4C5BB672230e8672085532f7e901544a7375
+    command: node ./bot.js
+    restart: always
+  app214:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30214:3000
+    environment:
+      - TOKEN_NAME=UMA
+      - TOKEN_CONTRACT=0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828
+    command: node ./bot.js
+    restart: always
+  app215:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30215:3000
+    environment:
+      - TOKEN_NAME=pSAFEMOON
+      - TOKEN_CONTRACT=0x16631e53c20fd2670027c6d53efe2642929b285c
+    command: node ./bot.js
+    restart: always
+  app216:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30216:3000
+    environment:
+      - TOKEN_NAME=RADAR
+      - TOKEN_CONTRACT=0x44709a920fccf795fbc57baa433cc3dd53c44dbe
+    command: node ./bot.js
+    restart: always
+  app217:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30217:3000
+    environment:
+      - TOKEN_NAME=GLM
+      - TOKEN_CONTRACT=0x7DD9c5Cba05E151C895FDe1CF355C9A1D5DA6429
+    command: node ./bot.js
+    restart: always
+  app218:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30218:3000
+    environment:
+      - TOKEN_NAME=GNO
+      - TOKEN_CONTRACT=0x6810e776880c02933d47db1b9fc05908e5386b96
+    command: node ./bot.js
+    restart: always
+  app219:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30219:3000
+    environment:
+      - TOKEN_NAME=ARMOR
+      - TOKEN_CONTRACT=0x1337def16f9b486faed0293eb623dc8395dfe46a
+    command: node ./bot.js
+    restart: always
+  app220:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30220:3000
+    environment:
+      - TOKEN_NAME=SPI
+      - TOKEN_CONTRACT=0x9b02dd390a603add5c07f9fd9175b7dabe8d63b7
+    command: node ./bot.js
+    restart: always
+  app221:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30221:3000
+    environment:
+      - TOKEN_NAME=DGTX
+      - TOKEN_CONTRACT=0xc666081073E8DfF8D3d1c2292A29aE1A2153eC09
+    command: node ./bot.js
+    restart: always
+  app222:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30222:3000
+    environment:
+      - TOKEN_NAME=KEY
+      - TOKEN_CONTRACT=0x4cc19356f2d37338b9802aa8e8fc58b0373296e7
+    command: node ./bot.js
+    restart: always
+  app223:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30223:3000
+    environment:
+      - TOKEN_NAME=HOP
+      - TOKEN_CONTRACT=0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc
+    command: node ./bot.js
+    restart: always
+  app224:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30224:3000
+    environment:
+      - TOKEN_NAME=LCX
+      - TOKEN_CONTRACT=0x037a54aab062628c9bbae1fdb1583c195585fe41
+    command: node ./bot.js
+    restart: always
+  app225:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30225:3000
+    environment:
+      - TOKEN_NAME=Guppy
+      - TOKEN_CONTRACT=0xf7b098298f7c69fc14610bf71d5e02c60792894c
+    command: node ./bot.js
+    restart: always
+  app226:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30226:3000
+    environment:
+      - TOKEN_NAME=eRSDL
+      - TOKEN_CONTRACT=0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6
+    command: node ./bot.js
+    restart: always
+  app227:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30227:3000
+    environment:
+      - TOKEN_NAME=MATH
+      - TOKEN_CONTRACT=0x08d967bb0134f2d07f7cfb6e246680c53927dd30
+    command: node ./bot.js
+    restart: always
+  app228:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30228:3000
+    environment:
+      - TOKEN_NAME=PRO
+      - TOKEN_CONTRACT=0x226bb599a12c826476e3a771454697ea52e9e220
+    command: node ./bot.js
+    restart: always
+  app229:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30229:3000
+    environment:
+      - TOKEN_NAME=KNC
+      - TOKEN_CONTRACT=0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202
+    command: node ./bot.js
+    restart: always
+  app230:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30230:3000
+    environment:
+      - TOKEN_NAME=AGLD
+      - TOKEN_CONTRACT=0x32353A6C91143bfd6C7d363B546e62a9A2489A20
+    command: node ./bot.js
+    restart: always
+  app231:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30231:3000
+    environment:
+      - TOKEN_NAME=CHR
+      - TOKEN_CONTRACT=0x8A2279d4A90B6fe1C4B30fa660cC9f926797bAA2
+    command: node ./bot.js
+    restart: always
+  app232:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30232:3000
+    environment:
+      - TOKEN_NAME=CLV
+      - TOKEN_CONTRACT=0x80c62fe4487e1351b47ba49809ebd60ed085bf52
+    command: node ./bot.js
+    restart: always
+  app233:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30233:3000
+    environment:
+      - TOKEN_NAME=BOND
+      - TOKEN_CONTRACT=0x0391D2021f89DC339F60Fff84546EA23E337750f
+    command: node ./bot.js
+    restart: always
+  app234:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30234:3000
+    environment:
+      - TOKEN_NAME=MASK
+      - TOKEN_CONTRACT=0x69af81e73a73b40adf4f3d4223cd9b1ece623074
+    command: node ./bot.js
+    restart: always
+  app235:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30235:3000
+    environment:
+      - TOKEN_NAME=INJ
+      - TOKEN_CONTRACT=0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30
+    command: node ./bot.js
+    restart: always
+  app236:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30236:3000
+    environment:
+      - TOKEN_NAME=SRM
+      - TOKEN_CONTRACT=0x476c5E26a75bd202a9683ffD34359C0CC15be0fF
+    command: node ./bot.js
+    restart: always
+  app237:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30237:3000
+    environment:
+      - TOKEN_NAME=FXS
+      - TOKEN_CONTRACT=0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0
+    command: node ./bot.js
+    restart: always
+  app238:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30238:3000
+    environment:
+      - TOKEN_NAME=MFG
+      - TOKEN_CONTRACT=0x6710c63432a2de02954fc0f851db07146a6c0312
+    command: node ./bot.js
+    restart: always
+  app239:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30239:3000
+    environment:
+      - TOKEN_NAME=RPL
+      - TOKEN_CONTRACT=0xb4efd85c19999d84251304bda99e90b92300bd93
+    command: node ./bot.js
+    restart: always
+  app240:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30240:3000
+    environment:
+      - TOKEN_NAME=IDRT
+      - TOKEN_CONTRACT=0x998FFE1E43fAcffb941dc337dD0468d52bA5b48A
+    command: node ./bot.js
+    restart: always
+  app241:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30241:3000
+    environment:
+      - TOKEN_NAME=FRONT
+      - TOKEN_CONTRACT=0xf8C3527CC04340b208C854E985240c02F7B7793f
+    command: node ./bot.js
+    restart: always
+  app242:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30242:3000
+    environment:
+      - TOKEN_NAME=MTA
+      - TOKEN_CONTRACT=0xa3BeD4E1c75D00fa6f4E5E6922DB7261B5E9AcD2
+    command: node ./bot.js
+    restart: always
+  app243:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30243:3000
+    environment:
+      - TOKEN_NAME=ALPHA
+      - TOKEN_CONTRACT=0xa1faa113cbe53436df28ff0aee54275c13b40975
+    command: node ./bot.js
+    restart: always
+  app244:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30244:3000
+    environment:
+      - TOKEN_NAME=STAKE
+      - TOKEN_CONTRACT=0x0Ae055097C6d159879521C384F1D2123D1f195e6
+    command: node ./bot.js
+    restart: always
+  app245:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30245:3000
+    environment:
+      - TOKEN_NAME=HEGIC
+      - TOKEN_CONTRACT=0x584bC13c7D411c00c01A62e8019472dE68768430
+    command: node ./bot.js
+    restart: always
+  app246:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30246:3000
+    environment:
+      - TOKEN_NAME=DRT
+      - TOKEN_CONTRACT=0x9af4f26941677c706cfecf6d3379ff01bb85d5ab
+    command: node ./bot.js
+    restart: always
+  app247:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30247:3000
+    environment:
+      - TOKEN_NAME=YAM
+      - TOKEN_CONTRACT=0x0AaCfbeC6a24756c20D41914F2caba817C0d8521
+    command: node ./bot.js
+    restart: always
+  app248:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30248:3000
+    environment:
+      - TOKEN_NAME=POOL
+      - TOKEN_CONTRACT=0x0cec1a9154ff802e7934fc916ed7ca50bde6844e
+    command: node ./bot.js
+    restart: always
+  app249:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30249:3000
+    environment:
+      - TOKEN_NAME=RARE
+      - TOKEN_CONTRACT=0xba5bde662c17e2adff1075610382b9b691296350
+    command: node ./bot.js
+    restart: always
+  app250:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30250:3000
+    environment:
+      - TOKEN_NAME=POND
+      - TOKEN_CONTRACT=0x57b946008913b82e4df85f501cbaed910e58d26c
+    command: node ./bot.js
+    restart: always
+  app251:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30251:3000
+    environment:
+      - TOKEN_NAME=EWTB
+      - TOKEN_CONTRACT=0x178c820f862b14f316509ec36b13123da19a6054
+    command: node ./bot.js
+    restart: always
+  app252:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30252:3000
+    environment:
+      - TOKEN_NAME=CHI
+      - TOKEN_CONTRACT=0x0000000000004946c0e9F43F4Dee607b0eF1fA1c
+    command: node ./bot.js
+    restart: always
+  app253:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30253:3000
+    environment:
+      - TOKEN_NAME=0xBTC
+      - TOKEN_CONTRACT=0xb6ed7644c69416d67b522e20bc294a9a9b405b31
+    command: node ./bot.js
+    restart: always
+  app254:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30254:3000
+    environment:
+      - TOKEN_NAME=GEN
+      - TOKEN_CONTRACT=0x543ff227f64aa17ea132bf9886cab5db55dcaddf
+    command: node ./bot.js
+    restart: always
+  app255:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30255:3000
+    environment:
+      - TOKEN_NAME=RBC
+      - TOKEN_CONTRACT=0xa4eed63db85311e22df4473f87ccfc3dadcfa3e3
+    command: node ./bot.js
+    restart: always
+  app256:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30256:3000
+    environment:
+      - TOKEN_NAME=ORBS
+      - TOKEN_CONTRACT=0xff56cc6b1e6ded347aa0b7676c85ab0b3d08b0fa
+    command: node ./bot.js
+    restart: always
+  app257:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30257:3000
+    environment:
+      - TOKEN_NAME=FRAX
+      - TOKEN_CONTRACT=0x853d955acef822db058eb8505911ed77f175b99e
+    command: node ./bot.js
+    restart: always
+  app258:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30258:3000
+    environment:
+      - TOKEN_NAME=CQT
+      - TOKEN_CONTRACT=0xd417144312dbf50465b1c641d016962017ef6240
+    command: node ./bot.js
+    restart: always
+  app259:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30259:3000
+    environment:
+      - TOKEN_NAME=MLN
+      - TOKEN_CONTRACT=0xec67005c4e498ec7f55e092bd1d35cbc47c91892
+    command: node ./bot.js
+    restart: always
+  app260:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30260:3000
+    environment:
+      - TOKEN_NAME=KP3R
+      - TOKEN_CONTRACT=0x1ceb5cb57c4d4e2b2433641b95dd330a33185a44
+    command: node ./bot.js
+    restart: always
+  app261:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30261:3000
+    environment:
+      - TOKEN_NAME=RGT
+      - TOKEN_CONTRACT=0xD291E7a03283640FDc51b121aC401383A46cC623
+    command: node ./bot.js
+    restart: always
+  app262:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30262:3000
+    environment:
+      - TOKEN_NAME=SPANK
+      - TOKEN_CONTRACT=0x42d6622dece394b54999fbd73d108123806f6a18
+    command: node ./bot.js
+    restart: always
+  app263:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30263:3000
+    environment:
+      - TOKEN_NAME=VISR
+      - TOKEN_CONTRACT=0xf938424f7210f31df2aee3011291b658f872e91e
+    command: node ./bot.js
+    restart: always
+  app264:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30264:3000
+    environment:
+      - TOKEN_NAME=UFT
+      - TOKEN_CONTRACT=0x0202Be363B8a4820f3F4DE7FaF5224fF05943AB1
+    command: node ./bot.js
+    restart: always
+  app265:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30265:3000
+    environment:
+      - TOKEN_NAME=NDX
+      - TOKEN_CONTRACT=0x86772b1409b61c639eaac9ba0acfbb6e238e5f83
+    command: node ./bot.js
+    restart: always
+  app266:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30266:3000
+    environment:
+      - TOKEN_NAME=MIM
+      - TOKEN_CONTRACT=0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3
+    command: node ./bot.js
+    restart: always
+  app267:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30267:3000
+    environment:
+      - TOKEN_NAME=BZRX
+      - TOKEN_CONTRACT=0x56d811088235F11C8920698a204A5010a788f4b3
+    command: node ./bot.js
+    restart: always
+  app268:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30268:3000
+    environment:
+      - TOKEN_NAME=REM
+      - TOKEN_CONTRACT=0x83984d6142934bb535793a82adb0a46ef0f66b6d
+    command: node ./bot.js
+    restart: always
+  app269:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30269:3000
+    environment:
+      - TOKEN_NAME=OHM
+      - TOKEN_CONTRACT=0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5
+    command: node ./bot.js
+    restart: always
+  app270:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30270:3000
+    environment:
+      - TOKEN_NAME=AERGO
+      - TOKEN_CONTRACT=0x91Af0fBB28ABA7E31403Cb457106Ce79397FD4E6
+    command: node ./bot.js
+    restart: always
+  app271:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30271:3000
+    environment:
+      - TOKEN_NAME=HVN
+      - TOKEN_CONTRACT=0xC0Eb85285d83217CD7c891702bcbC0FC401E2D9D
+    command: node ./bot.js
+    restart: always
+  app272:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30272:3000
+    environment:
+      - TOKEN_NAME=XFT
+      - TOKEN_CONTRACT=0xabe580e7ee158da464b51ee1a83ac0289622e6be
+    command: node ./bot.js
+    restart: always
+  app273:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30273:3000
+    environment:
+      - TOKEN_NAME=CRD
+      - TOKEN_CONTRACT=0xcaaa93712bdac37f736c323c93d4d5fdefcc31cc
+    command: node ./bot.js
+    restart: always
+  app274:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30274:3000
+    environment:
+      - TOKEN_NAME=FNT
+      - TOKEN_CONTRACT=0xdc5864ede28bd4405aa04d93e05a0531797d9d59
+    command: node ./bot.js
+    restart: always
+  app275:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30275:3000
+    environment:
+      - TOKEN_NAME=PKG
+      - TOKEN_CONTRACT=0x02f2d4a04e6e01ace88bd2cd632875543b2ef577
+    command: node ./bot.js
+    restart: always
+  app276:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30276:3000
+    environment:
+      - TOKEN_NAME=ICE
+      - TOKEN_CONTRACT=0xf16e81dce15b08f326220742020379b855b87df9
+    command: node ./bot.js
+    restart: always
+  app277:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30277:3000
+    environment:
+      - TOKEN_NAME=PSP
+      - TOKEN_CONTRACT=0xcafe001067cdef266afb7eb5a286dcfd277f3de5
+    command: node ./bot.js
+    restart: always
+  app278:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30278:3000
+    environment:
+      - TOKEN_NAME=JRT
+      - TOKEN_CONTRACT=0x8a9c67fee641579deba04928c4bc45f66e26343a
+    command: node ./bot.js
+    restart: always
+  app279:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30279:3000
+    environment:
+      - TOKEN_NAME=AUC
+      - TOKEN_CONTRACT=0xc12d099be31567add4e4e4d0d45691c3f58f5663
+    command: node ./bot.js
+    restart: always
+  app280:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30280:3000
+    environment:
+      - TOKEN_NAME=BFC
+      - TOKEN_CONTRACT=0x0c7D5ae016f806603CB1782bEa29AC69471CAb9c
+    command: node ./bot.js
+    restart: always
+  app281:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30281:3000
+    environment:
+      - TOKEN_NAME=LMT
+      - TOKEN_CONTRACT=0x327673ae6b33bd3d90f0096870059994f30dc8af
+    command: node ./bot.js
+    restart: always
+  app282:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30282:3000
+    environment:
+      - TOKEN_NAME=WOOFY
+      - TOKEN_CONTRACT=0xd0660cd418a64a1d44e9214ad8e459324d8157f1
+    command: node ./bot.js
+    restart: always
+  app283:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30283:3000
+    environment:
+      - TOKEN_NAME=DOUGH
+      - TOKEN_CONTRACT=0xad32A8e6220741182940c5aBF610bDE99E737b2D
+    command: node ./bot.js
+    restart: always
+  app284:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30284:3000
+    environment:
+      - TOKEN_NAME=BAC
+      - TOKEN_CONTRACT=0x3449fc1cd036255ba1eb19d65ff4ba2b8903a69a
+    command: node ./bot.js
+    restart: always
+  app285:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30285:3000
+    environment:
+      - TOKEN_NAME=DRC
+      - TOKEN_CONTRACT=0xa150Db9b1Fa65b44799d4dD949D922c0a33Ee606
+    command: node ./bot.js
+    restart: always
+  app286:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30286:3000
+    environment:
+      - TOKEN_NAME=ALN
+      - TOKEN_CONTRACT=0x8185bc4757572da2a610f887561c32298f1a5748
+    command: node ./bot.js
+    restart: always
+  app287:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30287:3000
+    environment:
+      - TOKEN_NAME=BANK
+      - TOKEN_CONTRACT=0x24a6a37576377f63f194caa5f518a60f45b42921
+    command: node ./bot.js
+    restart: always
+  app288:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30288:3000
+    environment:
+      - TOKEN_NAME=ETHV
+      - TOKEN_CONTRACT=0xEeEeeeeEe2aF8D0e1940679860398308e0eF24d6
+    command: node ./bot.js
+    restart: always
+  app289:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30289:3000
+    environment:
+      - TOKEN_NAME=COMBO
+      - TOKEN_CONTRACT=0xffffffff2ba8f66d4e51811c5190992176930278
+    command: node ./bot.js
+    restart: always
+  app290:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30290:3000
+    environment:
+      - TOKEN_NAME=BCMC
+      - TOKEN_CONTRACT=0x2BA8349123de45E931a8C8264c332E6e9CF593F9
+    command: node ./bot.js
+    restart: always
+  app291:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30291:3000
+    environment:
+      - TOKEN_NAME=SENT
+      - TOKEN_CONTRACT=0xa44e5137293e855b1b7bc7e2c6f8cd796ffcb037
+    command: node ./bot.js
+    restart: always
+  app292:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30292:3000
+    environment:
+      - TOKEN_NAME=PENDLE
+      - TOKEN_CONTRACT=0x808507121b80c02388fad14726482e061b8da827
+    command: node ./bot.js
+    restart: always
+  app293:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30293:3000
+    environment:
+      - TOKEN_NAME=BiFi
+      - TOKEN_CONTRACT=0x2791bfd60d232150bff86b39b7146c0eaaa2ba81
+    command: node ./bot.js
+    restart: always
+  app294:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30294:3000
+    environment:
+      - TOKEN_NAME=ESD
+      - TOKEN_CONTRACT=0x36F3FD68E7325a35EB768F1AedaAe9EA0689d723
+    command: node ./bot.js
+    restart: always
+  app295:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30295:3000
+    environment:
+      - TOKEN_NAME=ASTRO
+      - TOKEN_CONTRACT=0xcbd55D4fFc43467142761A764763652b48b969ff
+    command: node ./bot.js
+    restart: always
+  app296:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30296:3000
+    environment:
+      - TOKEN_NAME=EYE
+      - TOKEN_CONTRACT=0x155ff1A85F440EE0A382eA949f24CE4E0b751c65
+    command: node ./bot.js
+    restart: always
+  app297:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30297:3000
+    environment:
+      - TOKEN_NAME=renDOGE
+      - TOKEN_CONTRACT=0x3832d2F059E55934220881F831bE501D180671A7
+    command: node ./bot.js
+    restart: always
+  app298:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30298:3000
+    environment:
+      - TOKEN_NAME=L2
+      - TOKEN_CONTRACT=0xbbff34e47e559ef680067a6b1c980639eeb64d24
+    command: node ./bot.js
+    restart: always
+  app299:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30299:3000
+    environment:
+      - TOKEN_NAME=STND
+      - TOKEN_CONTRACT=0x9040e237c3bf18347bb00957dc22167d0f2b999d
+    command: node ./bot.js
+    restart: always
+  app300:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30300:3000
+    environment:
+      - TOKEN_NAME=IQ
+      - TOKEN_CONTRACT=0x579cea1889991f68acc35ff5c3dd0621ff29b0c9
+    command: node ./bot.js
+    restart: always
+  app301:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30301:3000
+    environment:
+      - TOKEN_NAME=RULER
+      - TOKEN_CONTRACT=0x2aeccb42482cc64e087b6d2e5da39f5a7a7001f8
+    command: node ./bot.js
+    restart: always
+  app302:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30302:3000
+    environment:
+      - TOKEN_NAME=TAD
+      - TOKEN_CONTRACT=0x9f7229aF0c4b9740e207Ea283b9094983f78ba04
+    command: node ./bot.js
+    restart: always
+  app303:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30303:3000
+    environment:
+      - TOKEN_NAME=NFTI
+      - TOKEN_CONTRACT=0xe5feeac09d36b18b3fa757e5cf3f8da6b8e27f4c
+    command: node ./bot.js
+    restart: always
+  app304:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30304:3000
+    environment:
+      - TOKEN_NAME=yveCRV-DAO
+      - TOKEN_CONTRACT=0xc5bddf9843308380375a611c18b50fb9341f502a
+    command: node ./bot.js
+    restart: always
+  app305:
+    build: .
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 30305:3000
+    environment:
+      - TOKEN_NAME=stETH
+      - TOKEN_CONTRACT=0xdfe66b14d37c77f4e9b180ceb433d1b164f0281d
+    command: node ./bot.js
+    restart: always

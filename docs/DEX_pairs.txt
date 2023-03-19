@@ -1,0 +1,16 @@
+
+DEX trading pairs:
+
+1) Uniswap ($3.76b) - SushiSwap ($360.26m) -> Ethereum (965 token pairs)
+
+2) Uniswap ($82.79m) - Sushiswap ($37.68m) -> Polygon (453 token pairs)
+
+3) Uniswap ($82.79m) - Quickswap ($198.98m) -> Polygon (453 token pairs)
+
+4) Sushiswap ($37.68m) - Quickswap ($198.98m) -> Polygon (453 token pairs)
+
+5) PancakeSwap ($2.83b) - BiSwap (BSW) ($272.45m) -> BSC (474 token pairs)
+
+Uniswap ($3.76b) - FraxSwap ($60.1m) -> Ethereum
+SushiSwap ($360.26m) - FraxSwap ($60.1m) -> Ethereum
+PancakeSwap ($2.83b) - SushiSwap ($960.25k) -> BSC
